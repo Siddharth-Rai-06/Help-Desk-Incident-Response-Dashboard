@@ -1,0 +1,17 @@
+.formStyle{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+
+
+.submit{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
