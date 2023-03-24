@@ -65,7 +65,7 @@ app.post("/form" , async (req, res) => {
   await newUser.save();
   await axios
   .post(process.env.NEW_USER_URL,
-   {text:req.body.email})
+   {text:"Hey "+req.body.name+", Welcome to the team !!"})
   .then(()=>{
     res.send("Posted axios successfully")
   })
@@ -104,7 +104,7 @@ app.post("/alerts" , async (req, res) => {
   await newAlert.save();
   await axios
   .post(process.env.NEW_ALERT_URL,
-   {text:req.body.Descrip})
+   {text:"New Issue : "+req.body.Descrip})
   .then(()=>{
     res.send(newAlert)
   })
